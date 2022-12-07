@@ -16,8 +16,9 @@ html, body {
 .container {
     background-color: #fff;
     width: 400px;
-    height: 420px;
+    height: 430px;
     border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
   .heading {
     background-color: #fff;
