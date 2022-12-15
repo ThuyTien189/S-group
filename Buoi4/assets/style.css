@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(101,103,107,0.903271692745377) 0%, rgba(160,162,165,1) 25%, rgba(255,255,255,1) 85%);
+}
+.main {
+    width: 100%;
+    height: 100vh;
+}
+.header {
+    height: 50px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo .fb {
+    font-size: 40px;
+    margin: 0 10px;
+    color: #0D89F0;
+}
+.logo .search{
+    background-color: #F0F2F5;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 0 12px;
+}
+.logo .search i {
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 46px;
+}
+.list {
+    display: flex;
+    align-items: center;
+    gap: 90px;
+    font-size: 20px;
+}
+.list a {
+    color: #65676B;
+}
+.icon {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+.icon a{
+    background-color: #F0F2F5;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 12px;
+    margin-right: 10px;
+    color: #000;
+} 
+.icon div {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.icon div img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 45px;
+}
+.home {
+    width: 90%;
+    height: 100%;
+    margin-left: 140px;
+}
+.home .img{
+    height: 70%;
+}
+.banner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.info {
+    display: flex;
+    height: 100%;
+}
+.avatar {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: -50px; 
+    left: 30px;
+    border-radius: 100px;
+    border: 3px solid #fff; 
+    overflow: hidden;
+}
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.content {
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+.name {
+    padding-left: 60px;
+    margin-top: 50px;
+}
+.name h2 {
+    margin-bottom: 10px;
+}
+.relate button {
+    margin-top: 80px;
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.relate .friend {
+    color: #000;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: #E4E6EB;
+}
+.relate .friend::before {
+    content: "\f4fc";
+    font-family: 'FontAwesome';
+    padding-right: 10px;
+}
+.relate .chat {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: #1B74E4;
+}
+.relate .chat::before {
+    content: "\f39f";
+    font-family: 'FontAwesome';
+    padding-right: 10px;
+}
+.messenger {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 120px;
+    margin: 0 10px;
+    align-items: flex-end;
+}
+.messenger .more {
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 12px;
+    margin-right: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+}
+.messenger a {
+    color: #000;
+}
+.messenger .bubble-chat {
+    position: relative;
+    cursor: pointer;
+}
+.messenger .bubble-chat::after {
+    content: "\f111";
+    font-family: 'FontAwesome';
+    padding-right: 10px;
+    color: #32A24D;
+    position: absolute;
+    bottom: 15px;
+    right: -5px;
+}
+.messenger .bubble-chat:hover::before {
+    content: ' \A MeoMeo \A \A Ok';
+    white-space: pre;
+    text-align: center;
+    width: 140px;
+    height: 80px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: absolute;
+    bottom: 5px;
+    right: 85px;
+}
+.messenger .bubble-chat:hover::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-left: 18px solid white;
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    bottom: 35px;
+    right: 60px;
+}
+.messenger .bubble-chat img {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    margin: 10px 0;
+    object-fit: contain;
+}
+.messenger .new {
+    background-color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+}
