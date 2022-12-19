@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', Arial, sans-serif;
+}
+body {
+    width: 100%;
+    height: 100vh;
+}
+.box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2f3238;
+}
+.oscar {
+    margin: 50px auto;
+    width: 500px;
+    height: 400px;
+    background-image: url("https://tympanus.net/Development/HoverEffectIdeas/img/9.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+}
+.oscar .filter {
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #3a342a;
+    opacity: 0.6;
+}
+.oscar:hover .filter {
+    background: linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
+    opacity: 0.6;
+}
+.oscar::before{
+    content: '';
+    position: absolute;
+    border: 2px solid #fff;
+    top: 30px;
+    left: 30px;
+    bottom: 30px;
+    right: 30px;
+}
+.oscar::before, .oscar p {
+    opacity: 0;
+    transform: scale(0);
+    transition: all .5s ease-in-out;
+}
+.oscar:hover::before, .oscar:hover p {
+    opacity: 1;
+    transform: scale(1);
+}
+.text {
+    padding: 0 30px;
+
+}
+.oscar h2 {
+    font-weight: unset;
+    font-size: 30px;
+    transform: translateY(50%);
+    transition: all .5s linear;
+}
+.oscar:hover h2 {
+    transform: translateY(0);
+}
+.oscar h2 span {
+    font-weight: bold;
+}
+.oscar p {
+    font-size: 16px;
+    margin: 10px 20px;
+}
+
+.sadie {
+    margin: 50px auto;
+    width: 500px;
+    height: 400px;
+    background-image: url("https://tympanus.net/Development/HoverEffectIdeas/img/2.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #484c61;
+    position: relative;
+    cursor: pointer;
+}
+.sadie .filter {
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.sadie:hover .filter {
+    background: linear-gradient(to bottom, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
+    opacity: 0.8;
+}
+
+.sadie::before, .sadie p {
+    opacity: 0;
+    transform: scale(0);
+    transition: all .5s ease-in-out;
+}
+.sadie:hover::before, .sadie:hover p {
+    opacity: 1;
+    color: #fff;
+    transform: scale(1);
+}
+.sadie h2 {
+    font-weight: unset;
+    font-size: 30px;
+    transform: translateY(100%);
+    transition: all .5s linear;
+}
+.sadie:hover h2 {
+    color: #fff;
+    transform: translateY(-90%);
+}
+.sadie h2 span {
+    font-weight: bold;
+}
+.sadie p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 40px 80px;
+    text-align: center;
+    opacity: 0;
+}
