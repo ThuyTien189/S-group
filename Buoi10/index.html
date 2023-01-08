@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./script.js" defer></script>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 15px;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .form-1,
+        .form-render {
+            width: 700px;
+            border: 2px solid #000;
+            padding: 30px;
+            margin: 20px 0;
+        }
+
+        input {
+            margin: 5px 0;
+            width: 100%;
+            padding: 5px 10px;
+            border-radius: 5px;
+            border: 1px solid #CCC;
+        }
+
+        button {
+            font-size: 20px;
+            color: #FFF;
+            background-color: #000;
+            padding: 10px 40px;
+            border: none;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        th {
+            color: #000;
+            font-weight: 600;
+            background-color: #ccc;
+        }
+
+        a {
+            color: red;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>JavaScript CRUD Example Tutorial</h1>
+    <divs class="main">
+        <form action="" class="form-1">
+            <!-- name -->
+            <label for="" class="label-name">Full name</label>
+            <br>
+            <input type="text" class="input-name">
+            <!-- email -->
+            <br>
+            <label for="" class="label-mail">Email id</label>
+            <br>
+            <input type="email" class="input-mail">
+            <br>
+            <!-- Salary -->
+            <label for="" class="label-salary">Salary</label>
+            <br>
+            <input type="number" class="input-salary">
+            <br>
+            <!-- City -->
+            <label for="" class="label-city">City</label>
+            <br>
+            <input type="text" class="input-city">
+            <br>
+            <button class="btn">Submit</button>
+        </form>
+
+        <form action="" class="form-render">
+            <table class="render-table">
+                <th>Full name</th>
+                <th>Email</th>
+                <th>Salary</th>
+                <th>City</th>
+                <th>Action</th>
+                </>
+            </table>
+        </form>
+        </div>
+</body>
+
+</html>
